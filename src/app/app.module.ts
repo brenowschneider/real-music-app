@@ -6,13 +6,15 @@ import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AlbumsComponent } from './albums/albums.component';
 import { ReviewsComponent } from './reviews/reviews.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AlbumsComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
