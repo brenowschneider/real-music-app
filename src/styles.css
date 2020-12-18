@@ -7,3 +7,11 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.rmH-90 {
+  height: 90%;
+}
+
+.rmClickableElement {
+  cursor: pointer;
+}

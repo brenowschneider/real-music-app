@@ -1,7 +1,10 @@
-<div href="#" class="list-group-item" aria-current="true">
+<div [routerLink]="['/albums', album.id]" class="list-group-item rmClickableElement" aria-current="true">
   <div class="d-flex w-100 justify-content-between">
     <h5 class="mb-1">{{ album.author }}</h5>
     <small>rating: {{ album.score }}</small>
   </div>
-  <p class="mb-1">{{ album.title }}</p>
+  <div class="d-flex w-100 justify-content-between">
+    <p class="mb-1">{{ album.title }}</p>
+    <small>year: {{ album.year }}</small>
+  </div>
 </div>

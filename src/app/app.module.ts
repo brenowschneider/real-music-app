@@ -10,6 +10,7 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { HomeComponent } from './home/home.component';
 import { AlbumItemComponent } from './albums/album-item/album-item.component';
 import { AlbumListComponent } from './albums/album-list/album-list.component';
+import { AlbumDetailsComponent } from './albums/album-details/album-details.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AlbumListComponent } from './albums/album-list/album-list.component';
     ReviewsComponent,
     HomeComponent,
     AlbumItemComponent,
-    AlbumListComponent
+    AlbumListComponent,
+    AlbumDetailsComponent
   ],
   imports: [
     BrowserModule,
