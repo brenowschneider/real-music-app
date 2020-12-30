@@ -8,6 +8,14 @@ body {
   height: 100%;
 }
 
+.rmFullWidth {
+  width: 100%;
+}
+
+.rmFullHeight {
+  height: 100%;
+}
+
 .rmH-90 {
   height: 90%;
 }
