@@ -1,0 +1,33 @@
+<h4>New Review</h4>
+<form [formGroup]="newReviewForm" (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label for="reviewedAlbum">Album being reviewed</label>
+    <select class="form-select" id="reviewedAlbum" formControlName="album">
+      <option *ngFor="let album of albums" [value]="album.id">
+        {{ album.value }}
+      </option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="title">Title</label>
+    <input
+      type="text"
+      id="title"
+      formControlName="title"
+      class="form-control"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="description">Your review</label>
+    <textarea
+      id="description"
+      formControlName="description"
+      class="form-control"
+    ></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="title">Your score</label>
+    <input id="score" formControlName="score" class="form-control" />
+  </div>
+  <button class="btn btn-success" type="submit">Send</button>
+</form>

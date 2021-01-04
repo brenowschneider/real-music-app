@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { AlbumItemComponent } from './albums/album-item/album-item.component';
 import { AlbumListComponent } from './albums/album-list/album-list.component';
 import { AlbumDetailsComponent } from './albums/album-details/album-details.component';
+import { ReviewEditComponent } from './reviews/review-edit/review-edit.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { AlbumDetailsComponent } from './albums/album-details/album-details.comp
     HomeComponent,
     AlbumItemComponent,
     AlbumListComponent,
-    AlbumDetailsComponent
+    AlbumDetailsComponent,
+    ReviewEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

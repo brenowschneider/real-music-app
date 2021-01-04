@@ -1,6 +1,7 @@
 export interface Review {
-    id: number;
+    id: string;
     title: string;
     description: string;
     score: number;
+    albumId: number;
 }
