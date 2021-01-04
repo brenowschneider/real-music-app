@@ -8,12 +8,18 @@ import { Review } from '../interfaces/review';
   providedIn: 'root',
 })
 export class ReviewsService {
-  private readonly albumsPath = '/reviews';
+  private readonly reviewsPath = '/reviews';
   constructor(private httpClient: HttpClient) {}
+
+  public getReviews(): Observable<Review[]> {
+    return this.httpClient.get<Review[]>(
+      `${environment.apiBaseUrl}${this.reviewsPath}`
+    );
+  }
 
   public createReview(review: Review): Observable<Review> {
     return this.httpClient.post<Review>(
-      `${environment.apiBaseUrl}${this.albumsPath}`,
+      `${environment.apiBaseUrl}${this.reviewsPath}`,
       review
     );
   }

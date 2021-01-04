@@ -13,6 +13,8 @@ import { AlbumListComponent } from './albums/album-list/album-list.component';
 import { AlbumDetailsComponent } from './albums/album-details/album-details.component';
 import { ReviewEditComponent } from './reviews/review-edit/review-edit.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ReviewListComponent } from './reviews/review-list/review-list.component';
+import { ReviewItemComponent } from './reviews/review-item/review-item.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     AlbumItemComponent,
     AlbumListComponent,
     AlbumDetailsComponent,
-    ReviewEditComponent
+    ReviewEditComponent,
+    ReviewListComponent,
+    ReviewItemComponent,
   ],
   imports: [
     BrowserModule,
